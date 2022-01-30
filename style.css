@@ -1,0 +1,333 @@
+*{
+margin: 0;
+padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+/* navigatiopn  */
+nav{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+padding: 1vw 8vw;
+align-items: center;
+box-shadow: 2px 2px 10px purple;
+}
+
+nav img{
+width: 100px;
+/* remove height if necessary for respo media query  */
+ height: 100px; 
+cursor: pointer;
+}
+
+nav .navigation ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav .navigation ul li{
+    list-style: none;
+    margin-left: 30px;
+    text-decoration: none;
+    color: purple;
+}
+
+nav .navigation ul li a{
+    text-decoration: none;
+    color: purple;
+    font-size: 16px;
+    font-weight: 700;
+    transition: 1s ;
+}
+
+nav .navigation ul li a:hover{
+    color: rgb(130, 107, 211);
+    /* top: -25px;
+    left: 35px;
+    width: 500px;
+    height: auto;
+     display: block; 
+    z-index: 999;
+     position: relative; 
+    font-size: 50px; */
+}
+
+nav .navigation{
+    display:flex;
+}
+/* respo */
+ 
+#open{
+    width: 30px;
+    height: 30px;
+    display: none;
+}
+
+#close{
+    display: none;
+}
+
+/* Intro */
+
+#Intro{
+    background-image: linear-gradient(rgba(9,5,54,0.3),rgba(9,5,54,0.3)), url(Assets/kcnorthclassrooms_1600-1024x768.jpg);
+    width: 100%;
+    height:100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#Intro h2{
+    color: white;
+    font-size: 3rem;
+    letter-spacing: 1px;
+}
+
+#Intro p{
+    color: white;
+    width: 50%;
+    font-size: 1rem;
+    line-height: 20px;
+}
+
+#Intro a{
+    text-decoration: none;
+    font-size: 13px;
+    padding: 10px 30px;
+    background-color: white;
+     font-weight: 400;
+     border-radius: 5px;
+}
+
+#Intro .btn{
+    margin-top: 25px;
+}
+
+#Intro a.purple{
+    color: #fff;
+    background-color: purple;
+    transition: 1s ease;
+}
+
+#Intro a.purple:hover{
+color: purple;
+background-color: #fff;
+}
+
+
+#Intro a.white{
+    color: purple;
+    background-color: #fff;
+    transition: 1s ease;
+}
+
+#Intro a.white:hover{
+    color: white;
+    background-color: purple;
+}
+
+/* grades  grid-box*/
+
+#Grades{
+    padding: 5vw 8vw 0 8vw;
+    text-align:center;
+    margin-bottom: 40px;
+    text-decoration: none;
+}
+     /* display: grid;
+    position: relative;
+    max-width: 100%;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    grid-template-rows:minmax(100px, auto) ;
+    margin: 20px;
+    grid-auto-flow: dense;
+    grid-gap: 10px;
+    background-color: purple; */
+
+
+#Grades .classes-box{
+ background-color: purple;
+} 
+
+#Grades .classes{
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+grid-template-rows:minmax(100px, auto) ;
+grid-gap: 20px;
+position: relative;
+margin-top: 20px;
+
+}
+
+#Grades .classes-box i{
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+#Grades .classes-box h3{
+    font-size: 25px;
+    font-weight: 500px;
+    color: #fff;
+    padding: 13px 0 5px 7px
+}
+
+
+#Grades .classes-box  p{
+    font-size: 15px;
+    font-weight: 300px;
+    color: #fff; 
+}
+
+#Grades a{
+    text-decoration: none;
+}
+
+/* clubs */
+
+#Clubs a{
+    text-decoration: none;
+}
+
+#Clubs{
+    padding: 5vw 8vw 0 8vw;
+    text-align:center;
+    margin-bottom: 40px;
+    text-decoration: none;
+    background-color: rgba(11, 169, 180, 0.425) ;
+}
+
+#Clubs .clubs-box{
+    background-color: purple;
+   } 
+   
+   #Clubs .Clubs-1{
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+   grid-template-rows:minmax(100px, auto) ;
+   grid-gap: 20px;
+   position: relative;
+   margin-top: 20px;
+   
+   }
+   
+   #Clubs .clubs-box i{
+       font-size: 1.2rem;
+       color: #fff;
+   }
+   
+   #Clubs .clubs-box h3{
+       font-size: 25px;
+       font-weight: 500px;
+       color: #fff;
+       padding: 13px 0 5px 7px
+   }
+   
+   
+   #Clubs .clubs-box  p{
+       font-size: 15px;
+       font-weight: 300px;
+       color: #fff; 
+   }
+   
+
+   /* footer */
+
+   .footer{
+       position: fixed;
+       bottom: 0px;
+       width:100%; 
+        color:rgb(2, 0, 128); 
+   }
+
+   .main-content{
+       display: flex; 
+       background:purple ;
+       
+   }
+   .main-content .box{
+       flex-basis: 50%;
+       padding: 10px 20px;
+   }
+
+   .leftbox .h2{
+       font-size: 1.12rem;
+       font-weight: 500;
+       text-transform: uppercase;
+   }
+
+   /* responsive for tablet */
+
+   @media(max-width:769px) {
+    nav{
+        padding: 15px 20px;
+    }
+
+    nav img{
+        width: 70px;
+    }
+
+    #open{
+        display: initial;
+    }
+
+    #close{
+        display:initial;
+        color: seashell;
+        font-size: 1.6rem;
+        padding: 30px 0 20px 20px;
+    }
+
+    nav .navigation ul{
+        position: absolute;
+        top: 0;
+        right: -220px;
+        width: 220px;
+        height: 100vh;
+        /* background: rgba(11, 169, 180, 0.425); */
+        background: purple;
+        backdrop-filter: blur(5px);
+        /* border: 1px solid rgba(11, 169, 180, 0.425); */
+        border: 1px solid purple ;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        transition: 1s ease;
+    }
+
+    nav .navigation ul .active{
+        right: 0;
+    }
+
+    nav .navigation ul li{
+       padding: 20px 0 20px 40px;
+       margin-left: 0;
+       
+    }
+
+    nav .navigation ul li a{
+        color: seashell;
+     }
+
+     #Intro p{
+         width: 90%;
+     }
+   
+     #Intro{
+       padding-top:0px;
+    }
+}
+
+
+
+
